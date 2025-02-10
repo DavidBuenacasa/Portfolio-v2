@@ -1,0 +1,277 @@
+---
+interface Props {
+	title: string;
+	description: string;
+	language: string;
+}
+
+const { title, description, language } = Astro.props;
+
+const keywords = 'portfolio, developer, web, app, full-stack, javascript, '
+	+ 'typescript, nodejs, express, mongodb, postgresql, mysql, rest, api, '
+	+ 'website, app, responsive, design, ui, ux, interface, user, experience, '
+	+ 'user interface, user experience, frontend, backend, fullstack, full-stack, '
+	+ 'full stack, developer, programmer, software, engineer, software engineer';
+const author = 'David Buenacasa';
+const robots = 'index, follow';
+
+const og = {
+  title,
+  description,
+  url: 'https://portfolio.sirdavo.es',
+  image: 'https://res.cloudinary.com/dfeujtobk/image/upload/v1705960644'
+		+ '/Portfolio/840shots_so_d3ber6.png',
+};
+---
+
+<!doctype html>
+<html lang={language}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="keywords" content={keywords} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/logo.ico" />
+		<meta name="theme-color" content="#3b82f6" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="#3b82f6" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="author" content={author} />
+		<meta name="language" content={language} />
+		<meta name="robots" content={robots} />
+		<meta property="og:title" content={og.title} />
+		<meta property="og:description" content={og.description} />
+		<meta property="og:url" content={og.url} />
+		<meta property="og:image" content={og.image} />
+		<meta property="og:type" content="website" />
+		<meta name="twitter:title" content={og.title} />
+		<meta name="twitter:description" content={og.description} />
+		<meta name="twitter:url" content={og.url} />
+		<meta name="twitter:image" content={og.image} />
+		<meta name="twitter:card" content="summary_large_image" />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	:root {
+		--bg-color: #f7f7f7;
+		--bg-color-2: #3b82f6a3;
+		--bg-color-scroll: #aaaaaa;
+		--font-color: #070707;
+		--font-color-2: #070707bd;
+		--primary-color: #3b82f6;
+		--second-color: #1f2937;
+		--third-color: #e7e9ea;
+		--bg-color-button: #e6e6ee;
+		--bg-color-button-2: #3b82f6;
+		--bg-color-button-hover: #dcdcdc;
+		--bg-color-tooltip: #fff;
+		--bg-dark3: #4b5563;
+		--border-color: #d1d5db;
+		--border-color-nav: #cbcbcb;
+		--bg-color-badge: #1f2937;
+		--text-shadow-color: #000000;
+	}
+
+	body {
+		color: var(--font-color);
+		transition: 0.7s;
+		-webkit-transition: 0.7s;
+		-moz-transition: 0.7s;
+		-o-transition: 0.7s;
+		background-color: var(--bg-color);
+	}
+
+	body.dark-theme {
+		--bg-color: #111827;
+		--bg-color-2: #3b82f6;
+		--font-color: #f7f7f7;
+		--font-color-2: #dddddd;
+		--border-color-nav: #374151;
+		--bg-color-button: #1f2937;
+		--bg-color-button-2: #e7e9ea;
+		--bg-color-button-hover: #2d3949;
+		--bg-dark3: #d1d5db;
+		--bg-color-tooltip: var(--bg-color-button);
+		--bg-color-badge: #4b5563;
+	}
+
+	::-webkit-scrollbar {
+		width: 6px;
+		background-color: var(--bg-color);
+	}
+
+	::-webkit-scrollbar-track {
+		background-color: var(--bg-color);
+	}
+
+	::-webkit-scrollbar-thumb {
+		background-color: var(--bg-color-scroll);
+		border-radius: 1rem;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: var(--bg-color-scroll);
+		box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+	}
+
+	::-webkit-scrollbar-thumb:active {
+		background: var(--bg-color-scroll);
+	}
+
+	html {
+		scroll-behavior: smooth;
+		font-family: "Space Grotesk", system-ui, sans-serif;
+	}
+
+	p strong {
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+
+	button,
+	button.btn,
+	a.btn {
+		font-family: inherit;
+		border-radius: 8px;
+		border: none;
+		background-color: var(--primary-color);
+		color: var(--third-color);
+		padding: 12px 16px;
+		cursor: pointer;
+		height: 44px;
+		font-size: 17px;
+		min-width: 64px;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		transition: 0.25s;
+		font-weight: 600;
+		text-decoration: none;
+		display: flex;
+    align-items: center;
+    justify-content: center;
+		gap: 0.5rem;
+	}
+
+	button:hover,
+	a.btn:hover {
+		box-shadow: 0 0.5em 0.5em -0.4em var(--bg-dark3);
+		transform: translateY(-0.25em);
+	}
+
+	section {
+		width: 100%;
+		padding: 3rem 0;
+	}
+
+	section > .title {
+		font-weight: 600;
+		font-size: 2.8rem;
+		margin-bottom: 2.5rem;
+		align-self: flex-start;
+		color: var(--font-color);
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	@media (max-width: 900px) {
+		h1.title,
+		.title {
+			font-size: 46px;
+		}
+	}
+
+	@media (max-width: 480px) {
+		section > .title {
+			font-size: 38px;
+			gap: 1rem;
+			margin-bottom: 1.5rem;
+		}
+	}
+
+	@font-face {
+		font-family: "Space Grotesk";
+		src: url('/fonts/space-grotesk/SpaceGrotesk-Light.ttf');
+		font-weight: 300;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: "Space Grotesk";
+		src: url('/fonts/space-grotesk/SpaceGrotesk-Regular.ttf');
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: "Space Grotesk";
+		src: url('/fonts/space-grotesk/SpaceGrotesk-Medium.ttf');
+		font-weight: 500;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: "Space Grotesk";
+		src: url('/fonts/space-grotesk/SpaceGrotesk-SemiBold.ttf');
+		font-weight: 600;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: "Space Grotesk";
+		src: url('/fonts/space-grotesk/SpaceGrotesk-Bold.ttf');
+		font-weight: bold;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Yellowtail';
+		src: url('/fonts/yellowtail/Yellowtail-Regular.ttf');
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+
+</style>
+
+<script>
+  const body = document.body;
+  const theme = localStorage.getItem('theme');
+  const darkThemeName = 'dark-theme';
+
+  const savePreference = (theme: string) => {
+    localStorage.removeItem('theme');
+    localStorage.setItem('theme', theme);
+  }
+
+  const setTheme = (theme: string) => {
+    if(theme === 'light') {
+      body.classList.remove(darkThemeName);
+    }
+    if(theme === darkThemeName) {
+      body.classList.add(darkThemeName);
+    }
+    savePreference(theme);
+  }
+
+  if(!theme) {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    setTheme((isDarkMode) ? darkThemeName : 'light');
+  } else {
+    setTheme(theme);
+  }
+</script>

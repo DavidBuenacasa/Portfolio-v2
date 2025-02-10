@@ -1,0 +1,119 @@
+---
+import CodeIcon from './icons/code-icon.astro';
+import { getI18n } from '@i18n/index';
+
+const { currentLocale } = Astro;
+
+const i18n = getI18n({ currentLocale });
+const grados = i18n.FORMACION_SECTION.GRADOS.degree;
+const master = i18n.FORMACION_SECTION.MASTER.master;
+const cursos = i18n.FORMACION_SECTION.CURSOS.course;
+---
+
+<section id="formacion">
+  <span class="title">
+    <CodeIcon />
+    {i18n.FORMACION_SECTION.TITLE}
+  </span>
+
+  <div class="container-grid-formacion">
+    <!-- Grados -->
+    <div>
+      <h3>{i18n.FORMACION_SECTION.GRADOS.title}</h3>
+      {
+        grados.map((grado) => (
+          <div class="container-titulo">
+            <h4>{grado.degree}</h4>
+            <p>{grado.academy}</p>
+            <div class="fechas">
+              <p>{grado.startDate}</p>
+              <p>{grado.endDate}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <!-- Master -->
+    <div>
+      <h3>{i18n.FORMACION_SECTION.MASTER.title}</h3>
+      {
+        master.map((master) => (
+          <div class="container-titulo">
+            <h4>{master.degree}</h4>
+            <p>{master.academy}</p>
+            <div class="fechas">
+              <p>{master.startDate}</p>
+              <p>{master.endDate}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <!-- Cursos -->
+
+    <div class="container-formacion">
+      <h3>{i18n.FORMACION_SECTION.CURSOS.title}</h3>
+      {
+        cursos.map((curso) => (
+          <div class="container-titulo">
+            <h4>{curso.degree}</h4>
+            <p>{curso.academy}</p>
+            <div class="fechas">
+              <p>{curso.startDate}</p>
+              <p>{curso.endDate}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .container-titulo {
+    width: 300px;
+    height: auto;
+    background-color: #27293d;
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .container-titulo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+  }
+
+  .fechas {
+    display: flex;
+    gap: 20px;
+  }
+
+  .container-grid-formacion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  @media (max-width: 860px) {
+    .container-grid-formacion {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 700px) {
+    .container-grid-formacion {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+</style>

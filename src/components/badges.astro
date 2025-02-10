@@ -1,0 +1,69 @@
+---
+import CodeIcon from './icons/code-icon.astro';
+import { getI18n } from '@i18n/index';
+
+const { currentLocale } = Astro;
+
+const i18n = getI18n({ currentLocale });
+const badges = i18n.BADGES_SECTION.badges;
+var clasName="";
+
+if(badges.length<3){
+    clasName="container-badges-flex";
+}else{
+    clasName="container-badges-grid";
+}
+
+
+
+---
+<section id="badges">
+
+    <span class="title">
+        <CodeIcon />
+        {i18n.BADGES_SECTION.title}
+    </span>
+
+    <div class={clasName} id="container-badges">
+        {
+            badges.map((badge) => (
+                <div class="container-item">
+                    <img src={badge.image} alt={badge.name} class="badge"/>
+                    <h4>{badge.name}</h4>
+                </div>
+            ))
+        }
+    </div>
+</section>
+
+
+<style>
+    .badge{
+    width: 200px;
+}
+
+.container-item{
+    margin: 20px;
+    text-align: center;
+}
+
+.container-badges-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+
+}
+
+.container-badges-flex{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 700px) {
+    .container-badges-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+</style>

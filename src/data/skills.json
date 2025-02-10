@@ -1,0 +1,86 @@
+{
+  "cardsDataFrontend": [
+    {
+      "name": "HTML",
+      "imagePath": "/images/html.webp",
+      "alt": "html"
+    },
+    {
+      "name": "CSS 3",
+      "imagePath": "/images/css.webp",
+      "alt": "css"
+    },
+    {
+      "name": "Angular",
+      "imagePath": "/images/angular.webp",
+      "alt": "angular"
+    },
+    {
+      "name": "Astro",
+      "imagePath": "/images/astro.webp",
+      "alt": "astro"
+    },
+    {
+      "name": "Bootstrap",
+      "imagePath": "/images/bootstrap.webp",
+      "alt": "bootstrap"
+    }
+  ],
+  "cardsDataBackend": [
+    {
+      "name": "Abap",
+      "imagePath": "/images/SAP.webp",
+      "alt": "js"
+    },
+    {
+      "name": "C#",
+      "imagePath": "/images/c-sharp.webp",
+      "alt": "js"
+    },
+    {
+      "name": "Python",
+      "imagePath": "/images/python.webp",
+      "alt": "js"
+    },
+
+    {
+      "name": "JavaScript",
+      "imagePath": "/images/js.webp",
+      "alt": "js"
+    },
+    {
+      "name": "TypeScript",
+      "imagePath": "/images/ts.webp",
+      "alt": "ts"
+    },
+    {
+      "name": "Nodejs",
+      "imagePath": "/images/nodejs.webp",
+      "alt": "nodejs"
+    },
+    {
+      "name": "PostgreSql",
+      "imagePath": "/images/postgresql.webp",
+      "alt": "postgresql"
+    },
+    {
+      "name": "MySql",
+      "imagePath": "/images/mysql.webp",
+      "alt": "mysql"
+    }
+
+  ],
+  "cardsDataOthers": [
+    {
+      "name": "Git",
+      "imagePath": "/images/git.webp",
+      "alt": "git"
+    },
+    {
+      "name": "Docker",
+      "imagePath": "/images/docker.webp",
+      "alt": "docker"
+    }
+  ]
+
+}

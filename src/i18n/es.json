@@ -1,0 +1,142 @@
+{
+  "LANGUAGE": "es",
+  "SEO_TITLE": "David Buenacasa - Portfolio",
+  "SEO_DESCRIPTION": "Explora mi portafolio para ver mis proyectos y habilidades. Soy un desarrollador full-stack y me encanta crear sitios web y aplicaciones.",
+  "HERO_SECTION": {
+    "TITLE": "¡Hola!",
+    "TITLE_NAV": "Inicio",
+    "SUBTITLE_NORMAL": "Soy",
+    "SUBTITLE_EMPHASIS": "David Buenacasa",
+    "JOB_TITLE": "Desarrollador------",
+    "IMAGE": {
+      "ALT": "David Buenacasa - Desarrollador Frontend"
+    }
+  },
+  "ABOUT_SECTION": {
+    "TITLE": "Sobre mí",
+    "DESCRIPTION_1": "Mi nombre es David Buenacasa, soy un programador de Zaragoza, con experiencia en ciertos lenguajes de programacion.",
+    "DESCRIPTION_2": "Tambien tengo muchas aficiones relacionadas con el ambito de la tecnologia, como la domotica, la realidad virtual o la impresion 3d, me gusta estar siempre probando las ultimas tecnologias de primera mano cuando tengo ocasion.",
+    "DESCRIPTION_3": "Actualmente, estoy reorientandome hacia la administracion de Sistemas y Redes.",
+    "IMAGE": {
+      "ALT": "Marco Cruz - Sobre mí"
+    }
+  },
+  "SKILLS_SECTION": {
+    "TITLE": "Habilidades",
+    "TITLES": {
+      "FRONTEND": "Frontend",
+      "BACKEND": "Backend",
+      "OTHERS": "Otras herramientas",
+      "LEARNING": "Aprendiendo"
+    }
+  },
+  "PORTFOLIO_SECTION": {
+    "TITLE": "Proyectos",
+    "BUTTONS": {
+      "BTN_GITHUB": "Código",
+      "BTN_PRODUCTION": "Demo",
+      "BTN_MORE_PROJECTS": "Ver más..."
+    },
+    "PROJECTS": [
+      {
+        "name": "Blog",
+        "description": "Este es un servicio de almacenamiento en la nube que permite a los usuarios cargar y descargar archivos. Aquí también puedes crear carpetas y subcarpetas para organizar tus archivos.",
+        "image": "images/portfolio/cloud-box.webp",
+        "technologies": [],
+        "urlGithub": "",
+        "urlProduction": ""
+      },
+      {
+        "name": "FrikiRender",
+        "description": "Este es un servicio de almacenamiento en la nube que permite a los usuarios cargar y descargar archivos. Aquí también puedes crear carpetas y subcarpetas para organizar tus archivos.",
+        "image": "images/portfolio/cloud-box.webp",
+        "technologies": [],
+        "urlGithub": "",
+        "urlProduction": ""
+      }
+    ]
+  },
+  "EXPERIENCIA_SECTION": {
+    "TITLE": "Experiencia Laboral",
+    "TRABAJOS": [
+      {
+        "puesto": "Desarrollador Abap",
+        "empresa": "Deloitte Consulting",
+        "descripcion": "Durante mi tiempo en Deloitte, trabajé como programador ABAP en SAP, enfocándome en el desarrollo de Dynpros, programación orientada a objetos, reportes ALV y tareas centradas en el módulo SD.",
+        "fechaInicio": "09-2023",
+        "fechaFin": "03-2024"
+      },
+      {
+        "puesto": "Desarrollador C#",
+        "empresa": "Audinfor System",
+        "descripcion": "Durante mi tiempo en Audinfor System, trabajé como programador en C#, desarrollando y manteniendo aplicaciones robustas y eficientes para diversos proyectos de la empresa.",
+        "fechaInicio": "06-2022",
+        "fechaFin": "09-2022"
+      }
+    ]
+  },
+"FORMACION_SECTION": {
+    "TITLE": "Formacion",
+    "GRADOS": {
+      "title":"Grados",
+      "degree":[
+        {
+          "degree": "CFGS Administracion de Redes y Sistemas",
+          "academy": "Medac",
+          "startDate": "09-2024",
+          "endDate": "Cursando"
+        },
+        {
+          "degree": "CFGS Desarrollo de Aplicaciones Multiplataforma",
+          "academy": "CPIFP Los Enlaces",
+          "startDate": "09-2020",
+          "endDate": "06-2022"
+        }
+      ]
+    },
+    "MASTER": {
+      "title":"Master",
+      "master":[
+        {
+          "degree": "Master de Ciberseguridad",
+          "academy": "Medac",
+          "startDate": "09-2024",
+          "endDate": "Cursando"
+        }
+      ]
+    },
+    "CURSOS": {
+      "title":"Cursos",
+      "course":[
+        {
+          "degree": "SAP S4HANA Area Financiera (S4F10,S4F20) 60h",
+          "academy": "Center for Advanced Technologies of Zaragoza",
+          "startDate": "04-2024",
+          "endDate": ""
+        },
+        {
+          "degree": "Programming Course ABAP SAP 160h",
+          "academy": "Deloitte Consulting",
+          "startDate": "05-2023",
+          "endDate": ""
+        }
+      ]
+    }
+  },
+  "BADGES_SECTION":{
+    "title":"Insignias",
+    "badges":[
+      {
+        "name":"AWS Cloud Quest: Cloud Practitioner",
+        "image":"/badges/aws_cloud_practitiones.png"
+      }
+    ]
+  },
+  "FOOTER": {
+    "DESCRIPTION": "Diseñado y Construido con ❤️ por"
+  },
+  "THEME": {
+    "DARK_THEME": "Tema oscuro",
+    "LIGHT_THEME": "Tema claro"
+  }
+}

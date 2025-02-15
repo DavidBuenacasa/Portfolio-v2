@@ -1,12 +1,10 @@
 ---
-import ButtonTop from '@components/buttons/button-top.svelte';
 import Header from '@components/Header.astro';
 import Navigation from '@components/Navigation.svelte';
 import { getI18n } from '@i18n/index';
 import Layout from '@layouts/Layout.astro';
 
 import About from './About.astro';
-import Contact from './Contact.astro';
 import Hero from './Hero.astro';
 import Portfolio from './Portfolio.astro';
 import Skills from './Skills.astro';
@@ -14,7 +12,7 @@ import Experiencia from './experiencia.astro';
 
 import Formacion from './formacion.astro';
 import Badges from './badges.astro';
-import Navbar from './navbar.astro';
+
 import Footer from './footer.astro';
 
 const { currentLocale } = Astro;
@@ -33,18 +31,18 @@ const i18n = getI18n({ currentLocale });
     <div class="content">
       <div class="blur bottom"></div>
       <div class="blur top"></div>
-      
+
       <!-- Inicio -->
       <Hero />
       <!-- Proyectos -->
       <Portfolio />
 
-      <Experiencia></Experiencia>
-      <Formacion></Formacion>
-      <Badges></Badges>
+      <Experiencia />
+      <Formacion />
+      <Badges />
       <Skills />
       <About />
-      <Footer></Footer>
+      <Footer />
     </div>
   </div>
 </Layout>

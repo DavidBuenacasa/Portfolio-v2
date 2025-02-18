@@ -39,28 +39,16 @@
     },
     "PROJECTS": [
       {
-        "name": "Blog",
-        "description": "This is a cloud storage service that allows users to upload and download files. Here you can also create folders and subfolders to organize your files",
-        "image": "images/portfolio/cloud-box.webp",
-        "technologies": [],
-        "urlGithub": "",
-        "urlProduction": ""
-      },
-      {
-        "name": "FrikiRender",
-        "description": "This is a cloud storage service that allows users to upload and download files. Here you can also create folders and subfolders to organize your files",
-        "image": "images/portfolio/cloud-box.webp",
-        "technologies": [],
-        "urlGithub": "",
-        "urlProduction": ""
-      },
-      {
-        "name": "WhatsApp Analyzer",
-        "description": "This is a cloud storage service that allows users to upload and download files. Here you can also create folders and subfolders to organize your files",
-        "image": "images/portfolio/cloud-box.webp",
-        "technologies": [],
-        "urlGithub": "",
-        "urlProduction": ""
+        "name": "Whatsapp-Analyzer",
+        "description": "This application allows you to load your WhatsApp conversations and get detailed statistics about them. You can view graphs by year or by type of messages.",
+        "image": "images/portfolio/projectWhatsapp.webp",
+        "technologies": [
+          {"name":"React","image":"react.webp"},
+          {"name":"Typescript","image":"ts.webp"},
+          {"name":"TailWind","image":"tailwind.webp"}
+        ],
+        "urlGithub": "https://github.com/DavidBuenacasa/Whatsapp-Analyzer",
+        "urlProduction": "https://whatsapp-analyzer.sirdavo.es/"
       }
     ]
   },

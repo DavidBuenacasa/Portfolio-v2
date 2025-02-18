@@ -39,20 +39,16 @@
     },
     "PROJECTS": [
       {
-        "name": "Blog",
-        "description": "Este es un servicio de almacenamiento en la nube que permite a los usuarios cargar y descargar archivos. Aquí también puedes crear carpetas y subcarpetas para organizar tus archivos.",
-        "image": "images/portfolio/cloud-box.webp",
-        "technologies": [],
-        "urlGithub": "",
-        "urlProduction": ""
-      },
-      {
-        "name": "FrikiRender",
-        "description": "Este es un servicio de almacenamiento en la nube que permite a los usuarios cargar y descargar archivos. Aquí también puedes crear carpetas y subcarpetas para organizar tus archivos.",
-        "image": "images/portfolio/cloud-box.webp",
-        "technologies": [],
-        "urlGithub": "",
-        "urlProduction": ""
+        "name": "Whatsapp-Analyzer",
+        "description": "Esta aplicación te permite cargar tus conversaciones de WhatsApp y obtener estadísticas detalladas sobre ellas. Podras ver graficas por año o por tipos de mensajes.",
+        "image": "images/portfolio/projectWhatsapp.webp",
+        "technologies": [
+          {"name":"React","image":"react.webp"},
+          {"name":"Typescript","image":"ts.webp"},
+          {"name":"TailWind","image":"tailwind.webp"}
+        ],
+        "urlGithub": "https://github.com/DavidBuenacasa/Whatsapp-Analyzer",
+        "urlProduction": "https://whatsapp-analyzer.sirdavo.es/"
       }
     ]
   },

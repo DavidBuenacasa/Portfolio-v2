@@ -1,26 +1,25 @@
 ---
-import CodeIcon from './icons/code-icon.astro';
 import { getI18n } from '@i18n/index';
+
+import InsigniaIcon from './icons/insignia-icon.astro';
 
 const { currentLocale } = Astro;
 
 const i18n = getI18n({ currentLocale });
-const badges = i18n.BADGES_SECTION.badges;
-var clasName="";
+const { badges } = i18n.BADGES_SECTION;
+let clasName = '';
 
-if(badges.length<3){
-    clasName="container-badges-flex";
-}else{
-    clasName="container-badges-grid";
+if (badges.length < 3) {
+  clasName = 'container-badges-flex';
+} else {
+  clasName = 'container-badges-grid';
 }
-
-
 
 ---
 <section id="badges">
 
     <span class="title">
-        <CodeIcon />
+        <InsigniaIcon></InsigniaIcon>
         {i18n.BADGES_SECTION.title}
     </span>
 
@@ -35,7 +34,6 @@ if(badges.length<3){
         }
     </div>
 </section>
-
 
 <style>
     .badge{

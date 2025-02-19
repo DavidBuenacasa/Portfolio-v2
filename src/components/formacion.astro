@@ -1,18 +1,19 @@
 ---
-import CodeIcon from './icons/code-icon.astro';
 import { getI18n } from '@i18n/index';
+
+import EstudiosIcon from './icons/estudios-icon.astro';
 
 const { currentLocale } = Astro;
 
 const i18n = getI18n({ currentLocale });
 const grados = i18n.FORMACION_SECTION.GRADOS.degree;
-const master = i18n.FORMACION_SECTION.MASTER.master;
+const masters = i18n.FORMACION_SECTION.MASTER.master;
 const cursos = i18n.FORMACION_SECTION.CURSOS.course;
 ---
 
 <section id="formacion">
   <span class="title">
-    <CodeIcon />
+    <EstudiosIcon></EstudiosIcon>
     {i18n.FORMACION_SECTION.TITLE}
   </span>
 
@@ -38,7 +39,7 @@ const cursos = i18n.FORMACION_SECTION.CURSOS.course;
     <div>
       <h3>{i18n.FORMACION_SECTION.MASTER.title}</h3>
       {
-        master.map((master) => (
+        masters.map((master) => (
           <div class="container-titulo">
             <h4>{master.degree}</h4>
             <p>{master.academy}</p>

@@ -58,6 +58,7 @@
       {
         "puesto": "Desarrollador Abap",
         "empresa": "Deloitte Consulting",
+        "icon":"/",
         "descripcion": "Durante mi tiempo en Deloitte, trabajé como programador ABAP en SAP, enfocándome en el desarrollo de Dynpros, programación orientada a objetos, reportes ALV y tareas centradas en el módulo SD.",
         "fechaInicio": "09-2023",
         "fechaFin": "03-2024"

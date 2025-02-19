@@ -1,5 +1,5 @@
 ---
-import CodeIcon from './icons/code-icon.astro';
+import BriefcaseIcon from '@components/icons/briefcase-icon.svelte';
 import { getI18n } from '@i18n/index';
 
 const { currentLocale } = Astro;
@@ -10,17 +10,16 @@ const trabajos = i18n.EXPERIENCIA_SECTION.TRABAJOS;
 
 <section id="experiencia">
   <span class="title">
-    <CodeIcon />
+    <BriefcaseIcon />
     {i18n.EXPERIENCIA_SECTION.TITLE}
   </span>
 
   <div class="container">
     <div class="timeline">
-        
       {
         trabajos.map((trabajo) => (
-        <div class="timeline-container">
-            <div class="timeline-icon ">
+          <div class="timeline-container danger">
+            <div class="timeline-icon">
               <i class="far fa-grin-wink" />
             </div>
             <div class="timeline-body">
@@ -30,17 +29,16 @@ const trabajos = i18n.EXPERIENCIA_SECTION.TRABAJOS;
               <p>
                 <b>{trabajo.empresa}</b>
               </p>
-              <p>
-                {trabajo.descripcion}
+              <p>{trabajo.descripcion}</p>
+              <p class="timeline-subtitle">
+                {trabajo.fechaInicio} - {trabajo.fechaFin}
               </p>
-              <p class="timeline-subtitle">{trabajo.fechaInicio} - {trabajo.fechaFin}</p>
             </div>
           </div>
         ))
       }
     </div>
   </div>
-
 </section>
 
 <style>
@@ -58,7 +56,6 @@ const trabajos = i18n.EXPERIENCIA_SECTION.TRABAJOS;
   }
 
   .container {
-    
   }
 
   p {
@@ -98,6 +95,12 @@ const trabajos = i18n.EXPERIENCIA_SECTION.TRABAJOS;
     text-align: center;
     font-size: 2rem;
     background: #4f537b;
+  }
+
+  .timeline-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .timeline-container:hover {

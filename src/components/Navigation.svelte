@@ -79,7 +79,8 @@
     </li>
     <li class="portfolio">
       <a href="#portfolio" aria-label="Portfolio section">
-        <WrenchIcon />
+        
+        <CodeIcon></CodeIcon>
         <span class="title">{portfolio}</span>
       </a>
     </li>
@@ -91,13 +92,13 @@
   </li>
   <li class="formacion">
     <a href="#formacion" aria-label="Formacion section">
-      <BookIcon></BookIcon>
+      <EstudiosIcon></EstudiosIcon>
       <span class="title">{formacion}</span>
     </a>
 </li>
     <li class="skills">
       <a href="#skills" aria-label="Skills section">
-        <CodeIcon></CodeIcon>
+        <WrenchIcon />
         <span class="title">{skills}</span>
       </a>
     </li>

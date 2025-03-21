@@ -7,10 +7,12 @@
     "TITLE_NAV": "Home",
     "SUBTITLE_NORMAL": "I'm",
     "SUBTITLE_EMPHASIS": "David Buenacasa",
-    "JOB_TITLE": "Developer",
+    "JOB_TITLE1": "Developer",
+    "JOB_TITLE2": "Developer",
     "IMAGE": {
       "ALT": "David Buenacasa - Developer"
-    }
+    },
+    "EMAIL":"davidbuenacasalopez12@gmail.com"
   },
   "ABOUT_SECTION": {
     "TITLE": "About me",
@@ -18,7 +20,7 @@
     "DESCRIPTION_2": "I also have many hobbies related to the field of technology, such as home automation, virtual reality or 3d printing, I like to be always trying the latest technologies first hand when I have the chance.",
     "DESCRIPTION_3": "Currently, I am reorienting myself towards Systems and Network administration.",
     "IMAGE": {
-      "ALT": "Marco Cruz - About me"
+      "ALT": "David Buenacasa - About me"
     }
   },
   "SKILLS_SECTION": {
@@ -72,7 +74,7 @@
     ]
   },
   "FORMACION_SECTION": {
-    "TITLE": "Formacion",
+    "TITLE": "Education",
     "GRADOS": {
       "title":"Degree",
       "degree":[

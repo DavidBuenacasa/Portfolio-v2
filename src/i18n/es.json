@@ -7,10 +7,12 @@
     "TITLE_NAV": "Inicio",
     "SUBTITLE_NORMAL": "Soy",
     "SUBTITLE_EMPHASIS": "David Buenacasa",
-    "JOB_TITLE": "Desarrollador------",
+    "JOB_TITLE1": "Desarrollador",
+    "JOB_TITLE2": "Administrador de Sistemas",
     "IMAGE": {
       "ALT": "David Buenacasa - Desarrollador Frontend"
-    }
+    },
+    "EMAIL":"davidbuenacasalopez12@gmail.com"
   },
   "ABOUT_SECTION": {
     "TITLE": "Sobre mí",
@@ -18,7 +20,7 @@
     "DESCRIPTION_2": "Tambien tengo muchas aficiones relacionadas con el ambito de la tecnologia, como la domotica, la realidad virtual o la impresion 3d, me gusta estar siempre probando las ultimas tecnologias de primera mano cuando tengo ocasion.",
     "DESCRIPTION_3": "Actualmente, estoy reorientandome hacia la administracion de Sistemas y Redes.",
     "IMAGE": {
-      "ALT": "Marco Cruz - Sobre mí"
+      "ALT": "David Buenacasa - Sobre mí"
     }
   },
   "SKILLS_SECTION": {

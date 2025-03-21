@@ -1,6 +1,7 @@
 ---
 import GithubIcon from '@components/icons/github-icon.astro';
 import LinkedinIcon from '@components/icons/linkedin-icon.astro';
+import MailIcon from '@components/icons/mail-icon.astro';
 import { GITHUB_URL, LINKEDIN_URL } from '@constants/urls.ts';
 import { getI18n } from '@i18n/index';
 
@@ -11,7 +12,6 @@ const i18n = getI18n({ currentLocale });
 
 <section class="home" id="home">
   <div class="main-title">
-
     <!-- Titulo -->
     <h1 class="title">{i18n.HERO_SECTION.TITLE}<span>✌️</span></h1>
     <h2 class="title">
@@ -21,10 +21,14 @@ const i18n = getI18n({ currentLocale });
       </span>
     </h2>
     <span class="title-job">
-      {i18n.HERO_SECTION.JOB_TITLE}
+      {i18n.HERO_SECTION.JOB_TITLE1} -
+      {i18n.HERO_SECTION.JOB_TITLE2}
     </span>
+    <div class="mail-section">
+      <MailIcon height={40} width={40} />
+      <span>{i18n.HERO_SECTION.EMAIL}</span>
+    </div>
     <div class="bottom">
-
       <!-- Iconos del menu de inicio -->
       <div class="social">
         <!-- Github -->
@@ -137,9 +141,10 @@ const i18n = getI18n({ currentLocale });
   }
 
   span.title-job {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
     color: var(--font-color-2);
+
   }
 
   img {
@@ -150,6 +155,16 @@ const i18n = getI18n({ currentLocale });
     border: 3px solid var(--primary-color);
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
     background: #3b82f6;
+  }
+
+  .mail-section {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: var(--font-color-2);
   }
 
   @media (max-width: 1024px) {
@@ -163,6 +178,10 @@ const i18n = getI18n({ currentLocale });
     img.profile {
       width: 28rem;
       height: 23rem;
+    }
+
+    .mail-section {
+      justify-content: center;
     }
   }
 

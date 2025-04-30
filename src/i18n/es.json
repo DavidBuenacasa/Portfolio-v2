@@ -12,7 +12,7 @@
     "IMAGE": {
       "ALT": "David Buenacasa - Desarrollador Frontend"
     },
-    "EMAIL":"davidbuenacasalopez12@gmail.com"
+    "EMAIL": "davidbuenacasalopez12@gmail.com"
   },
   "ABOUT_SECTION": {
     "TITLE": "Sobre mí",
@@ -41,13 +41,35 @@
     },
     "PROJECTS": [
       {
+        "name": "Frikirender",
+        "description": "FrikiRender es un servicio de impresión 3D bajo demanda para crear prototipos, piezas personalizadas y litofanías retroiluminadas a partir de tus diseños digitales.",
+        "image": "images/portfolio/frikirender.webp",
+        "technologies": [
+          {
+            "name": "Astro",
+            "image": "astro.webp"
+          }
+        ],
+        "urlGithub": "",
+        "urlProduction": "https://whatsapp-analyzer.sirdavo.es/"
+      },
+      {
         "name": "Whatsapp-Analyzer",
         "description": "Esta aplicación te permite cargar tus conversaciones de WhatsApp y obtener estadísticas detalladas sobre ellas. Podras ver graficas por año o por tipos de mensajes.",
         "image": "images/portfolio/projectWhatsapp.webp",
         "technologies": [
-          {"name":"React","image":"react.webp"},
-          {"name":"Typescript","image":"ts.webp"},
-          {"name":"TailWind","image":"tailwind.webp"}
+          {
+            "name": "React",
+            "image": "react.webp"
+          },
+          {
+            "name": "Typescript",
+            "image": "ts.webp"
+          },
+          {
+            "name": "TailWind",
+            "image": "tailwind.webp"
+          }
         ],
         "urlGithub": "https://github.com/DavidBuenacasa/Whatsapp-Analyzer",
         "urlProduction": "https://whatsapp-analyzer.sirdavo.es/"
@@ -60,7 +82,7 @@
       {
         "puesto": "Desarrollador Abap",
         "empresa": "Deloitte Consulting",
-        "icon":"/",
+        "icon": "/",
         "descripcion": "Durante mi tiempo en Deloitte, trabajé como programador ABAP en SAP, enfocándome en el desarrollo de Dynpros, programación orientada a objetos, reportes ALV y tareas centradas en el módulo SD.",
         "fechaInicio": "09-2023",
         "fechaFin": "03-2024"
@@ -74,11 +96,11 @@
       }
     ]
   },
-"FORMACION_SECTION": {
+  "FORMACION_SECTION": {
     "TITLE": "Formacion",
     "GRADOS": {
-      "title":"Grados",
-      "degree":[
+      "title": "Grados",
+      "degree": [
         {
           "degree": "CFGS Administracion de Redes y Sistemas",
           "academy": "Medac",
@@ -94,8 +116,8 @@
       ]
     },
     "MASTER": {
-      "title":"Master",
-      "master":[
+      "title": "Master",
+      "master": [
         {
           "degree": "Master de Ciberseguridad",
           "academy": "Medac",
@@ -105,8 +127,8 @@
       ]
     },
     "CURSOS": {
-      "title":"Cursos",
-      "course":[
+      "title": "Cursos",
+      "course": [
         {
           "degree": "SAP S4HANA Area Financiera (S4F10,S4F20) 60h",
           "academy": "Center for Advanced Technologies of Zaragoza",
@@ -122,12 +144,12 @@
       ]
     }
   },
-  "BADGES_SECTION":{
-    "title":"Insignias",
-    "badges":[
+  "BADGES_SECTION": {
+    "title": "Insignias",
+    "badges": [
       {
-        "name":"AWS Cloud Quest: Cloud Practitioner",
-        "image":"/badges/aws_cloud_practitiones.png"
+        "name": "AWS Cloud Quest: Cloud Practitioner",
+        "image": "/badges/aws_cloud_practitiones.png"
       }
     ]
   },

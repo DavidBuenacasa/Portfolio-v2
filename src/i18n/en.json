@@ -12,7 +12,7 @@
     "IMAGE": {
       "ALT": "David Buenacasa - Developer"
     },
-    "EMAIL":"davidbuenacasalopez12@gmail.com"
+    "EMAIL": "davidbuenacasalopez12@gmail.com"
   },
   "ABOUT_SECTION": {
     "TITLE": "About me",
@@ -41,13 +41,35 @@
     },
     "PROJECTS": [
       {
+        "name": "Frikirender",
+        "description": "FrikiRender is an on-demand 3D printing service for creating prototypes, custom parts, and backlit lithophanes from your digital designs.",
+        "image": "images/portfolio/frikirender.webp",
+        "technologies": [
+          {
+            "name": "Astro",
+            "image": "astro.webp"
+          }
+        ],
+        "urlGithub": "",
+        "urlProduction": "https://whatsapp-analyzer.sirdavo.es/"
+      },
+      {
         "name": "Whatsapp-Analyzer",
         "description": "This application allows you to load your WhatsApp conversations and get detailed statistics about them. You can view graphs by year or by type of messages.",
         "image": "images/portfolio/projectWhatsapp.webp",
         "technologies": [
-          {"name":"React","image":"react.webp"},
-          {"name":"Typescript","image":"ts.webp"},
-          {"name":"TailWind","image":"tailwind.webp"}
+          {
+            "name": "React",
+            "image": "react.webp"
+          },
+          {
+            "name": "Typescript",
+            "image": "ts.webp"
+          },
+          {
+            "name": "TailWind",
+            "image": "tailwind.webp"
+          }
         ],
         "urlGithub": "https://github.com/DavidBuenacasa/Whatsapp-Analyzer",
         "urlProduction": "https://whatsapp-analyzer.sirdavo.es/"
@@ -76,8 +98,8 @@
   "FORMACION_SECTION": {
     "TITLE": "Education",
     "GRADOS": {
-      "title":"Degree",
-      "degree":[
+      "title": "Degree",
+      "degree": [
         {
           "degree": "CFGS Administracion de Redes y Sistemas",
           "academy": "Medac",
@@ -93,8 +115,8 @@
       ]
     },
     "MASTER": {
-      "title":"Master",
-      "master":[
+      "title": "Master",
+      "master": [
         {
           "degree": "Master Cybersecurity",
           "academy": "Medac",
@@ -104,8 +126,8 @@
       ]
     },
     "CURSOS": {
-      "title":"Course",
-      "course":[
+      "title": "Course",
+      "course": [
         {
           "degree": "SAP S4HANA Financial area (S4F10,S4F20) 60h",
           "academy": "Center for Advanced Technologies of Zaragoza",
@@ -121,12 +143,12 @@
       ]
     }
   },
-  "BADGES_SECTION":{
-    "title":"Insignias",
-    "badges":[
+  "BADGES_SECTION": {
+    "title": "Insignias",
+    "badges": [
       {
-        "name":"AWS Cloud Quest: Cloud Practitioner",
-        "image":"/badges/aws_cloud_practitiones.png"
+        "name": "AWS Cloud Quest: Cloud Practitioner",
+        "image": "/badges/aws_cloud_practitiones.png"
       }
     ]
   },

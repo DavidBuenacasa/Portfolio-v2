@@ -1,10 +1,19 @@
+/* eslint-disable import/no-unresolved */
 import { defineConfig } from 'astro/config';
 import node from '@astrojs/node';
 import svelte from '@astrojs/svelte';
+import partytown from '@astrojs/partytown';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [svelte()],
+  integrations: [
+    svelte(),
+    partytown({
+      config: {
+        forward: ['dataLayer.push'],
+      },
+    }),
+  ],
   output: 'server',
   adapter: node({
     mode: 'standalone',

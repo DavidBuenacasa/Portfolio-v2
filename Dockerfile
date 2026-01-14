@@ -19,7 +19,7 @@ COPY --from=builder /app/dist ./dist
 COPY --from=builder /app/package*.json ./
 
 # Instalamos solo las dependencias de producción (omite devDependencies)
-RUN npm install --omit=dev --legacy-peer-deps
+RUN npm install 
 
 ENV HOST=0.0.0.0
 ENV PORT=4321

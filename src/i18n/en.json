@@ -73,6 +73,26 @@
         ],
         "urlGithub": "https://github.com/DavidBuenacasa/Whatsapp-Analyzer",
         "urlProduction": "https://whatsapp-analyzer.sirdavo.es/"
+      },
+      {
+        "name": "Vacantes Aragon Formatter",
+        "description": "Vacantes Aragon Formatter is a tool designed to streamline the reading and analysis of educational job openings published on the official DGA portal.",
+        "image": "images/portfolio/vacantes.webp",
+        "technologies": [
+          {
+            "name": "React",
+            "image": "react.webp"
+          },
+          {
+            "name": "Typescript",
+            "image": "ts.webp"
+          },
+          {
+            "name": "TailWind",
+            "image": "tailwind.webp"
+          }
+        ],
+        "urlProduction": "https://vacantes-aragon-formatter.sirdavo.es/"
       }
     ]
   },
@@ -121,7 +141,7 @@
           "degree": "Master Cybersecurity",
           "academy": "Medac",
           "startDate": "09-2024",
-          "endDate": "in progress"
+          "endDate": "06-2025"
         }
       ]
     },

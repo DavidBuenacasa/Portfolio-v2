@@ -72,7 +72,7 @@
           }
         ],
         "urlGithub": "https://github.com/DavidBuenacasa/Whatsapp-Analyzer",
-        "urlProduction": "https://whatsapp-analyzer.sirdavo.es/"
+        "urlProduction": "https://chat-analyzer.sirdavo.es/"
       },
       {
         "name": "Vacantes Aragon Formatter",
@@ -92,7 +92,7 @@
             "image": "tailwind.webp"
           }
         ],
-        "urlProduction": "https://vacantes-aragon-formatter.sirdavo.es/"
+        "urlProduction": "https://vacantes.sirdavo.es/"
       }
     ]
   },
